@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>航天云路迁徙图</title>
+    <style>
+        body {
+            background-color: #00060c;
+        }
+    </style>
+</head>
+<body>
+<div id="globalMigration" style="width: 1800px;height: 900px;margin: 30px auto;"></div>
+<script src="./js/jquery-1.11.2.min.js"></script>
+<script src="./js/echarts.min.js"></script>
+<script src="./js/world.js"></script>
+<script src="./js/global-migration.js"></script>
+<script>
+    //    数据
+    var chartData = {};
+    //    生产中心
+    chartData.production = [
+        {
+            name: '南昌',
+            value: 100
+        }, {
+            name: '杭州',
+            value: 80
+        }, {
+            name: '深圳观澜',
+            value: 70
+        }, {
+            name: '成都',
+            value: 40
+        }, {
+            name: '印度诺伊达',
+            value: 20
+        }
+    ];
+
+    //    设计中心
+    chartData.design = [
+        {
+            name: '深圳',
+            value: 30
+        }, {
+            name: '北京',
+            value: 30
+        }, {
+            name: '杭州',
+            value: 30
+        }, {
+            name: '上海',
+            value: 30
+        }, {
+            name: '台北',
+            value: 30
+        }, {
+            name: '南昌',
+            value: 30
+        }
+    ];
+
+    //    商务订单
+    chartData.business = [
+        {
+            name: '美国',
+            value: 60
+        }, {
+            name: '英国',
+            value: 30
+        }, {
+            name: '德国',
+            value: 50
+        }, {
+            name: '南非',
+            value: 100
+        }, {
+            name: '埃及',
+            value: 70
+        }, {
+            name: '印度',
+            value: 90
+        }
+    ];
+
+    //    中心点
+    chartData.center = [
+        {
+            name: '深圳',
+            value: 100
+        }
+    ];
+
+    var globalChart = echarts.init(document.getElementById('globalMigration'));
+    var option = getGlobalOption();
+    globalChart.setOption(option);
+
+    globalChart.on('click',function(params){
+       console.log(params);
+    });
+</script>
+</body>
+</html>

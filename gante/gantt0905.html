@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+
+<head>
+	<meta charset="utf-8">
+	<title>ECharts</title>
+</head>
+
+<body>
+	<!-- 为ECharts准备一个具备大小（宽高）的Dom -->
+	<div id="main" style="height:400px;width: 800px;"></div>
+	<!-- ECharts单文件引入 -->
+	<script src="plug/echarts-all.js"></script>
+	<script type="text/javascript">
+		 // 基于准备好的dom，初始化echarts图表
+		var myChart = echarts.init(document.getElementById('main'));
+		option = {
+			tooltip: {
+				trigger: 'axis',
+				axisPointer: { // 坐标轴指示器，坐标轴触发有效
+					type: 'shadow', // 默认为直线，可选为：'line' | 'shadow'
+					shadowStyle: {
+						color: 'rgba(150,150,150,0.1)',
+						width: 'auto',
+						type: 'default'
+					}
+				},
+				showDelay: 0,
+				hideDelay: 50,
+				backgroundColor: 'rgba(107,107,107,0.7)',
+				textStyle: {
+					fontFamily: '微软雅黑',
+					fontSize: 13
+				},
+				formatter: function(params) {
+					var tar;
+					if (params[1].value != '-') {
+						tar = params[1];
+					} else {
+						tar = params[2];
+					}
+					//浮动信息
+					return tar.data.desc;
+				}
+			},
+			legend: {
+				itemGap: 30,
+				x: 'center',
+				y: 'top',
+				//图例数据
+				data: ['查封', '轮候查封']
+			},
+			grid: {
+				x: 130,
+				borderColor: '#EFEFEF',
+			},
+			xAxis: [{
+				name: '',
+				type: 'value',
+				nameLocation: 'start',
+				position: 'top',
+				axisTick: {
+					show: true
+				},
+				splitArea: {
+					show: true,
+					areaStyle: {
+						color: [
+							'rgba(248,248,248,1)',
+							'rgba(243,243,243,1)'
+						]
+					}
+				},
+				splitLine: {
+					lineStyle: {
+						color: ['#EEEEEE'],
+						width: 1,
+						type: 'solid'
+					}
+				},
+				axisLabel: {
+					show: true,
+					formatter: function(value) {
+						//横坐标 显示日期
+						return addDays(value);
+					}
+				}
+			}],
+			yAxis: [{
+				type: 'category',
+				axisTick: {
+					show: false
+				},
+				splitLine: {
+					show: false
+				},
+				data: ['2015年执监字第50号', '2015年执监字第49号', '2015年执监字第48号']
+			}],
+			series: [{
+				name: '辅助留白',
+				type: 'bar',
+				//条形粗细
+				barWidth: 16,
+				stack: '总量',
+				itemStyle: {
+					normal: {
+						barBorderColor: 'rgba(0,0,0,0)',
+						color: 'rgba(0,0,0,0)'
+					},
+					emphasis: {
+						barBorderColor: 'rgba(0,0,0,0)',
+						color: 'rgba(0,0,0,0)'
+					}
+				},
+				data: [20, 5, 3]
+			}, {
+				name: '查封',
+				type: 'bar',
+				stack: '总量',
+				itemStyle: {
+					normal: {
+						barBorderRadius: 5,
+						color: '#6CD7D9',
+						label: {
+							show: true,
+							position: 'inside',
+							formatter: function(params, ticket, callback) {
+								//条形图上的文字     
+								return params.data.startDate + ' - ' + params.data.endDate + '  剩30天';
+							}
+						}
+					},
+					emphasis: {
+						barBorderRadius: 5
+					}
+				},
+				data: [
+					'-',
+					'-', {
+						value: 33,
+						startDate: '2014.09.02',
+						endDate: '2014.10.06',
+						desc: '当前状态：查封（剩XX天）<br/>解封时间：2014.10.6<br/>查封案件：XXX<br/>承办法官：XX（XXX庭）<br/>承办法院：XXXXXX'
+					}
+				]
+			}, {
+				name: '轮候查封',
+				type: 'bar',
+				stack: '总量',
+				itemStyle: {
+					normal: {
+						barBorderRadius: 5,
+						color: '#E5CF0D',
+						label: {
+							show: true,
+							position: 'inside',
+							formatter: function(params, ticket, callback) {
+								//条形图上的文字   
+								return params.data.startDate + ' - ' + params.data.endDate;
+							}
+						}
+					},
+					emphasis: {
+						barBorderRadius: 5
+					}
+				},
+				data: [{
+						value: 12,
+						startDate: '2014.09.20',
+						endDate: '2014.10.01',
+						desc: '轮候案件：XXX<br/>查封时间 ：- - 至 - -<br/>实际查封：XX天'
+					}, {
+						value: 40,
+						startDate: '2014.09.04',
+						endDate: '2014.10.12',
+						desc: '轮候案件：XXX<br/>查封时间 ：- - 至 - -<br/>实际查封：XX天'
+					},
+					'-'
+				]
+			}]
+		};
+		 // 为echarts对象加载数据 
+		myChart.setOption(option);
+		
+		//指定日期增加天数
+		function addDays(value) {
+			var curDate = new Date();
+			//var curDate = stringToDate('2014-08-30')
+			var date = new Date(Date.parse(curDate) + (86400000 * value));
+			return date.toLocaleDateString();
+		}
+	</script>
+</body>

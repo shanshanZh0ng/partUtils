@@ -1,0 +1,934 @@
+{
+  "status":0,
+  "error":"",
+  "data":{
+    "xmbh":"261",
+    "xmmc":"测试项目备案",
+    "banjians":[
+      {
+        "sxbm":"46020000FG-FW-1104",
+        "agent":"三亚",
+        "name":"项目备案",
+        "status":"办结",
+        "infos":[
+          {
+            "sblsh":"20130618513833",
+            "acceptTime":"2013-06-18 11:06:00",
+            "endTime":"2013-06-24 10:12:00",
+            "steps":[
+
+            ]
+          }
+        ]
+      },
+      {
+        "sxbm":"46020000GT-FW-0610",
+        "agent":"",
+        "name":"三亚",
+        "status":"不涉及",
+        "infos":[
+          {
+            "sblsh":"",
+            "acceptTime":"",
+            "endTime":"",
+            "steps":[
+
+            ]
+          }
+        ]
+      },
+      {
+        "sxbm":"zj1",
+        "agent":"",
+        "name":"招拍挂",
+        "status":"完成",
+        "infos":[
+
+        ]
+      },
+      {
+        "sxbm":"zj2",
+        "agent":"",
+        "name":"签合同",
+        "status":"完成",
+        "infos":[
+
+        ]
+      },
+      {
+        "sxbm":"zj3",
+        "agent":"",
+        "name":"缴费",
+        "status":"完成",
+        "infos":[
+
+        ]
+      },
+      {
+        "sxbm":"46020000GT-FW-0611",
+        "agent":"",
+        "name":"土地初始登记（出让）",
+        "status":"完成",
+        "infos":[
+
+        ]
+      },
+      {
+        "sxbm":"46020000GH-XK-0201",
+        "agent":"",
+        "name":"用地规划（出让）",
+        "status":"不涉及",
+        "infos":[
+
+        ]
+      },
+      {
+        "sxbm":"zj4",
+        "agent":"",
+        "name":"编制环评文件",
+        "status":"完成",
+        "infos":[
+
+        ]
+      },
+      {
+        "sxbm":"46020000HB-FW-0303",
+        "agent":"三亚",
+        "name":"环评（报告表）",
+        "status":"办结",
+        "infos":[
+          {
+            "sblsh":"20130628749378",
+            "acceptTime":"2013-06-28 11:00:00",
+            "endTime":"2013-07-15 16:50:00",
+            "steps":[
+
+            ]
+          }
+        ]
+      },
+      {
+        "sxbm":"46020400HB-XK-0703",
+        "agent":"",
+        "name":"环评（登记表）",
+        "status":"不涉及",
+        "infos":[
+
+        ]
+      },
+      {
+        "sxbm":"46020000GQ-XK-0102",
+        "agent":"三亚",
+        "name":"国安报建",
+        "status":"办结",
+        "infos":[
+          {
+            "sblsh":"20130620171787",
+            "acceptTime":"2013-06-20 09:12:00",
+            "endTime":"2013-07-15 11:09:00",
+            "steps":[
+
+            ]
+          }
+        ]
+      },
+      {
+        "sxbm":"46020000RF-XK-0201",
+        "agent":"",
+        "name":"人防（面积）",
+        "status":"完成",
+        "infos":[
+
+        ]
+      },
+      {
+        "sxbm":"zj5",
+        "agent":"",
+        "name":"人防方案",
+        "status":"完成",
+        "infos":[
+
+        ]
+      },
+      {
+        "sxbm":"46020000RF-XK-0203",
+        "agent":"三亚市人民防空办公室",
+        "name":"人防（方案）",
+        "status":"办结",
+        "infos":[
+          {
+            "sblsh":"20130603381333",
+            "acceptTime":"2013-06-03 17:22:00",
+            "endTime":"2013-06-05 15:55:00",
+            "steps":[
+
+            ]
+          }
+        ]
+      },
+      {
+        "sxbm":"46020000RF-XK-0301",
+        "agent":"",
+        "name":"人防（易地申请）",
+        "status":"不涉及",
+        "infos":[
+
+        ]
+      },
+      {
+        "sxbm":"46020000RF-XK-0306",
+        "agent":"",
+        "name":"人防（易地审批）",
+        "status":"不涉及",
+        "infos":[
+
+        ]
+      },
+      {
+        "sxbm":"zj6",
+        "agent":"",
+        "name":"节能方案",
+        "status":"完成",
+        "infos":[
+
+        ]
+      },
+      {
+        "sxbm":"zj7",
+        "agent":"",
+        "name":"节能专家评审",
+        "status":"完成",
+        "infos":[
+
+        ]
+      },
+      {
+        "sxbm":"46020000JS-FW-1101",
+        "agent":"",
+        "name":"节能审查(住建)",
+        "status":"完成",
+        "infos":[
+
+        ]
+      },
+      {
+        "sxbm":"zj8",
+        "agent":"",
+        "name":"地勘报告",
+        "status":"完成",
+        "infos":[
+
+        ]
+      },
+      {
+        "sxbm":"46020000DZ-XK-0103",
+        "agent":"三亚市地震局",
+        "name":"抗震设防",
+        "status":"办结",
+        "infos":[
+          {
+            "sblsh":"20130627224103",
+            "acceptTime":"2013-06-27 11:23:00",
+            "endTime":"2013-06-27 11:27:00",
+            "steps":[
+
+            ]
+          }
+        ]
+      },
+      {
+        "sxbm":"zj9",
+        "agent":"",
+        "name":"气候方案",
+        "status":"不涉及",
+        "infos":[
+
+        ]
+      },
+      {
+        "sxbm":"zj10",
+        "agent":"",
+        "name":"气候方案评审",
+        "status":"不涉及",
+        "infos":[
+
+        ]
+      },
+      {
+        "sxbm":"46020000QX-XK-0116",
+        "agent":"",
+        "name":"气候资源利用",
+        "status":"不涉及",
+        "infos":[
+
+        ]
+      },
+      {
+        "sxbm":"zj11",
+        "agent":"",
+        "name":"设计方案",
+        "status":"完成",
+        "infos":[
+
+        ]
+      },
+      {
+        "sxbm":"zj12",
+        "agent":"",
+        "name":"专家评审",
+        "status":"完成",
+        "infos":[
+
+        ]
+      },
+      {
+        "sxbm":"zj13",
+        "agent":"",
+        "name":"规委会",
+        "status":"完成",
+        "infos":[
+
+        ]
+      },
+      {
+        "sxbm":"zj14",
+        "agent":"",
+        "name":"建筑图",
+        "status":"完成",
+        "infos":[
+
+        ]
+      },
+      {
+        "sxbm":"zj15",
+        "agent":"",
+        "name":"建筑图图审",
+        "status":"完成",
+        "infos":[
+
+        ]
+      },
+      {
+        "sxbm":"46020000GH-XK-0502",
+        "agent":"三亚市规划局",
+        "name":"规划许可（临时）",
+        "status":"办结",
+        "infos":[
+          {
+            "sblsh":"20141216741438",
+            "acceptTime":"2014-12-16 16:11:00",
+            "endTime":"2014-12-19 11:56:00",
+            "steps":[
+
+            ]
+          }
+        ]
+      },
+      {
+        "sxbm":"46020000RF-XK-0204",
+        "agent":"三亚",
+        "name":"人防（规划）",
+        "status":"办结",
+        "infos":[
+          {
+            "sblsh":"20150104585957",
+            "acceptTime":"2015-01-04 15:39:00",
+            "endTime":"2015-01-04 15:42:00",
+            "steps":[
+
+            ]
+          }
+        ]
+      },
+      {
+        "sxbm":"46020000FG-XK-0402",
+        "agent":"",
+        "name":"项目建议书审批",
+        "status":"不涉及",
+        "infos":[
+
+        ]
+      },
+      {
+        "sxbm":"46020000GX-XK-0102",
+        "agent":"",
+        "name":"节能登记（科工信）",
+        "status":"不涉及",
+        "infos":[
+
+        ]
+      },
+      {
+        "sxbm":"46020000GT-XK-0101",
+        "agent":"",
+        "name":"用地预审",
+        "status":"不涉及",
+        "infos":[
+
+        ]
+      },
+      {
+        "sxbm":"46020000GH-XK-0101",
+        "agent":"",
+        "name":"规划选址意见书",
+        "status":"不涉及",
+        "infos":[
+
+        ]
+      },
+      {
+        "sxbm":"46020000FG-XK-0501",
+        "agent":"",
+        "name":"可行性研究报告审批",
+        "status":"不涉及",
+        "infos":[
+
+        ]
+      },
+      {
+        "sxbm":"46020000GH-XK-0202",
+        "agent":"",
+        "name":"用地规划（划拨）",
+        "status":"不涉及",
+        "infos":[
+
+        ]
+      },
+      {
+        "sxbm":"46020000GT-XK-0201",
+        "agent":"",
+        "name":"国有土地使用权划拨许可",
+        "status":"不涉及",
+        "infos":[
+
+        ]
+      },
+      {
+        "sxbm":"zj16",
+        "agent":"",
+        "name":"水保方案",
+        "status":"完成",
+        "infos":[
+
+        ]
+      },
+      {
+        "sxbm":"46020000SL-XK-0407",
+        "agent":"三亚",
+        "name":"水土保持方案审批",
+        "status":"办结",
+        "infos":[
+          {
+            "sblsh":"20150415593844",
+            "acceptTime":"2015-04-15 16:11:00",
+            "endTime":"2015-04-23 16:37:00",
+            "steps":[
+
+            ]
+          }
+        ]
+      },
+      {
+        "sxbm":"46020000GH-XK-0701",
+        "agent":"",
+        "name":"规划设计条件",
+        "status":"办结",
+        "infos":[
+          {
+            "sblsh":"20121122155535",
+            "acceptTime":"2012-11-22 16:11:00",
+            "endTime":"2016-12-13 16:37:00",
+            "steps":[
+
+            ]
+          }
+        ]
+      },
+      {
+        "sxbm":"zj17",
+        "agent":"",
+        "name":"人防图审",
+        "infos":[
+
+        ]
+      },
+      {
+        "sxbm":"46020000RF-XK-0205",
+        "agent":"",
+        "name":"人防施工许可",
+        "infos":[
+
+        ]
+      },
+      {
+        "sxbm":"zj18",
+        "agent":"",
+        "name":"气候方案",
+        "status":"完成",
+        "infos":[
+
+        ]
+      },
+      {
+        "sxbm":"zj19",
+        "agent":"",
+        "name":"气候方案评审",
+        "status":"完成",
+        "infos":[
+
+        ]
+      },
+      {
+        "sxbm":"46020000QX-XK-0104",
+        "agent":"三亚",
+        "name":"气候论证",
+        "status":"办结",
+        "infos":[
+          {
+            "sblsh":"20130521211901",
+            "acceptTime":"2013-05-21 11:39:00",
+            "endTime":"2013-05-27 16:44:00",
+            "steps":[
+
+            ]
+          }
+        ]
+      },
+      {
+        "sxbm":"46020000QX-XK-0201",
+        "agent":"三亚",
+        "name":"防雷（初步设计）",
+        "status":"办结",
+        "infos":[
+          {
+            "sblsh":"20130613175722",
+            "acceptTime":"2013-06-13 17:28:00",
+            "endTime":"2013-06-18 15:50:00",
+            "steps":[
+
+            ]
+          }
+        ]
+      },
+      {
+        "sxbm":"46020000QX-XK-0202",
+        "agent":"",
+        "name":"防雷（施工图）",
+        "infos":[
+
+        ]
+      },
+      {
+        "sxbm":"46020000XF-XK-0101",
+        "agent":"",
+        "name":"消防设计审核",
+        "infos":[
+
+        ]
+      },
+      {
+        "sxbm":"46020000XF-FW-0301",
+        "agent":"",
+        "name":"消防设计备案",
+        "status":"不涉及",
+        "infos":[
+
+        ]
+      },
+      {
+        "sxbm":"46020000FG-XK-0602",
+        "agent":"",
+        "name":"初步设计概算（政府）",
+        "status":"不涉及",
+        "infos":[
+
+        ]
+      },
+      {
+        "sxbm":"46020000FG-XK-0701",
+        "agent":"",
+        "name":"招标备案（政府）",
+        "status":"不涉及",
+        "infos":[
+
+        ]
+      },
+      {
+        "sxbm":"46020000FG-XK-0802",
+        "agent":"",
+        "name":"直接发包备案（政府）",
+        "status":"不涉及",
+        "infos":[
+
+        ]
+      },
+      {
+        "sxbm":"46020000JS-FW-0701",
+        "agent":"",
+        "name":"直接发包备案（企业）",
+        "status":"不涉及",
+        "infos":[
+
+        ]
+      },
+      {
+        "sxbm":"46020000JS-FW-0602",
+        "agent":"三亚市住房和城乡建设局(一楼报建类)",
+        "name":"招标备案（企业）（勘察）",
+        "infos":[
+          {
+            "sblsh":"20141224315144",
+            "acceptTime":"2014-12-24 17:39:00",
+            "endTime":"2014-12-29 11:46:00",
+            "steps":[
+
+            ]
+          },
+          {
+            "sblsh":"20141224491493",
+            "acceptTime":"2014-12-24 17:41:00",
+            "endTime":"2016-10-06 20:09:55",
+            "steps":[
+
+            ]
+          },
+          {
+            "sblsh":"20150123190980",
+            "acceptTime":"2015-01-23 11:23:00",
+            "endTime":"2016-10-06 20:09:56",
+            "steps":[
+
+            ]
+          },
+          {
+            "sblsh":"20150123181479",
+            "acceptTime":"2015-01-23 11:27:00",
+            "endTime":"2016-10-06 20:10:00",
+            "steps":[
+
+            ]
+          }
+        ]
+      },
+      {
+        "sxbm":"zj21",
+        "agent":"",
+        "name":"招标（企业）（勘察）",
+        "status":"完成",
+        "infos":[
+
+        ]
+      },
+      {
+        "sxbm":"zj22",
+        "agent":"",
+        "name":"招标（企业）（设计）",
+        "status":"完成",
+        "infos":[
+
+        ]
+      },
+      {
+        "sxbm":"zj23",
+        "agent":"",
+        "name":"招标（企业）（施工）",
+        "status":"完成",
+        "infos":[
+
+        ]
+      },
+      {
+        "sxbm":"zj24",
+        "agent":"",
+        "name":"招标（企业）（监理）",
+        "status":"完成",
+        "infos":[
+
+        ]
+      },
+      {
+        "sxbm":"zj25",
+        "agent":"",
+        "name":"施工图审查",
+        "status":"办理中",
+        "infos":[
+
+        ]
+      },
+      {
+        "sxbm":"26",
+        "agent":"",
+        "name":"缴纳保证金等费用",
+        "infos":[
+
+        ]
+      },
+      {
+        "sxbm":"46020000JS-XK-3402",
+        "agent":"",
+        "name":"报监",
+        "status":"承诺",
+        "infos":[
+
+        ]
+      },
+      {
+        "sxbm":"46020000JS-XK-1501",
+        "agent":"",
+        "name":"施工许可",
+        "infos":[
+
+        ]
+      },
+      {
+        "sxbm":"46020000GH-XK-0401",
+        "agent":"",
+        "name":"开工放验线",
+        "infos":[
+
+        ]
+      },
+      {
+        "sxbm":"46020000JS-XK-2513",
+        "agent":"三亚市水务局",
+        "name":"建设项目排水",
+        "status":"办结",
+        "infos":[
+          {
+            "sblsh":"20150427993441",
+            "acceptTime":"2015-04-27 10:07:00",
+            "endTime":"2015-05-12 16:13:00",
+            "steps":[
+
+            ]
+          }
+        ]
+      },
+      {
+        "sxbm":"46020000JS-XK-2304",
+        "agent":"",
+        "name":"污水入网",
+        "infos":[
+
+        ]
+      },
+      {
+        "sxbm":"46020000RF-XK-0307",
+        "agent":"",
+        "name":"人防易地建设竣工",
+        "status":"不涉及",
+        "infos":[
+
+        ]
+      },
+      {
+        "sxbm":"46020000RF-XK-0403",
+        "agent":"",
+        "name":"人防验收",
+        "infos":[
+
+        ]
+      },
+      {
+        "sxbm":"46020000YL-XK-0501",
+        "agent":"",
+        "name":"绿化方案",
+        "infos":[
+
+        ]
+      },
+      {
+        "sxbm":"46020000YL-XK-0502",
+        "agent":"",
+        "name":"绿化施工",
+        "infos":[
+
+        ]
+      },
+      {
+        "sxbm":"46020000YL-XK-0503",
+        "agent":"",
+        "name":"绿化指标",
+        "infos":[
+
+        ]
+      },
+      {
+        "sxbm":"46020000SL-XK-0505",
+        "agent":"",
+        "name":"水保验收",
+        "infos":[
+
+        ]
+      },
+      {
+        "sxbm":"46020000GQ-XK-0104",
+        "agent":"",
+        "name":"国安验收",
+        "infos":[
+
+        ]
+      },
+      {
+        "sxbm":"46020000JS-FW-0101",
+        "agent":"",
+        "name":"验收备案",
+        "infos":[
+
+        ]
+      },
+      {
+        "sxbm":"46020400ZJ-FW-0101",
+        "agent":"",
+        "name":"白蚁合同备案",
+        "infos":[
+
+        ]
+      },
+      {
+        "sxbm":"46020400ZJ-FW-0201",
+        "agent":"",
+        "name":"白蚁竣工备案",
+        "infos":[
+
+        ]
+      },
+      {
+        "sxbm":"46020000QX-XK-0301",
+        "agent":"",
+        "name":"防雷验收",
+        "infos":[
+
+        ]
+      },
+      {
+        "sxbm":"46020000XF-FW-0303",
+        "agent":"",
+        "name":"消防验收备案抽查",
+        "status":"不涉及",
+        "infos":[
+
+        ]
+      },
+      {
+        "sxbm":"46020000XF-XK-0102",
+        "agent":"",
+        "name":"消防竣工验收",
+        "infos":[
+
+        ]
+      },
+      {
+        "sxbm":"46020000GH-XK-0301",
+        "agent":"",
+        "name":"规划核实",
+        "infos":[
+
+        ]
+      },
+      {
+        "sxbm":"46020400HB-XK-0301",
+        "agent":"",
+        "name":"环保验收（登记表）",
+        "status":"不涉及",
+        "infos":[
+
+        ]
+      },
+      {
+        "sxbm":"46020000HB-XK-0001",
+        "agent":"",
+        "name":"环保验收（报告表）",
+        "infos":[
+
+        ]
+      },
+      {
+        "sxbm":"zj26",
+        "agent":"",
+        "name":"土壤氡检测",
+        "status":"不涉及",
+        "infos":[
+
+        ]
+      },
+      {
+        "sxbm":"zj27",
+        "name":"资源利用报告",
+        "status":"不涉及",
+        "infos":[
+          {
+            "sblsh":" ",
+            "acceptTime":"",
+            "endTime":"",
+            "steps":[
+
+            ]
+          }
+        ]
+      },
+      {
+        "sxbm":"zj28",
+        "name":"气象灾害（特殊项目）",
+        "status":"不涉及",
+        "infos":[
+
+        ]
+      },
+      {
+        "sxbm":"zj29",
+        "name":"防雷方案（含）",
+        "status":"完成",
+        "infos":[
+          {
+            "acceptTime":"",
+            "endTime":"",
+            "steps":[
+
+            ]
+          }
+        ]
+      },
+      {
+        "sxbm":"zj30",
+        "name":"公示（5个工作日）",
+        "status":"完成",
+        "infos":[
+
+        ]
+      },
+      {
+        "sxbm":"zj31",
+        "name":"技术审查意见",
+        "status":"完成",
+        "infos":[
+
+        ]
+      },
+      {
+        "sxbm":"zj32",
+        "name":"环评报告书",
+        "status":"不涉及",
+        "infos":[
+
+        ]
+      },
+      {
+        "sxbm":"zj33",
+        "name":"报告书验收",
+        "status":"不涉及",
+        "infos":[
+
+        ]
+      },
+      {
+        "sxbm":"zj34",
+        "name":"水保方案评审",
+        "status":"完成",
+        "infos":[
+
+        ]
+      }
+    ]
+  }
+}

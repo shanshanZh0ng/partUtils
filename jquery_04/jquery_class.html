@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+	*{margin: 0;padding: 0;}
+	#aa{display: none;background-color: #f00;width:200px;height: 100px;}
+	#bb{display: none;background-color: #f00;width:200px;height: 100px;}
+	#gun{width:4802px;height: auto;position: absolute;}
+	img{float: left;border: none;}
+	#box{width: 1200px;height:600px;margin: 0 auto;position: relative;border: 5px solid #f00;overflow: hidden;}
+	#boxa{width: 800px;height:100px;margin: 0 auto;border: 1px solid #555;overflow: hidden;background-color: green}
+	#boxa span{display: block;width: 12px;height: 80px;background-color: #fff;float: left;border-left: 1px solid #555;color: #000;padding: 0 24px;padding-top: 20px;}
+	#kuang{width: 760px;height: 300px;margin: 0 auto;position: relative;overflow: hidden;}
+	#kuang div{width: 760px;height: 300px;position: absolute;left: 0;left: 0;display: none;}
+	#tu1{background:url(img/bg1.jpg);}
+	#tu2{background:url(img/bg2.jpg);}
+	#tu3{background:url(img/bg3.jpg);}
+	#tu4{background:url(img/bg4.jpg);}
+	#tu5{background:url(img/bg5.jpg);}
+	#kuang .con{border: none; position: absolute;top: 0px;left: -10px;}
+	#kuang .text{display: block;width: 760px;height: 300px;border: none; position: absolute;top: 0px;left: -800px;}
+	</style>
+	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript">
+	$(document).ready(function(){
+		/*function bu(){
+			$("#aa").show(500,function(){
+				hui();
+			})			
+		}
+		bu();
+		function hui(){			
+			$("#aa").hide(500,function(){
+				bu();
+			});			
+		}*/
+		/*function bu(){
+			$("#aa").show(500,function(){
+				$("#aa").hide(500,function(){
+				bu();
+			});	
+			})	
+		}
+		bu()*/
+		/*$("div").slideDown()
+		$("div").slideUp()
+		$("div").slideToggle("fast",function(){
+			console.log(this)
+		})*/
+		//$("div").fadeIn()
+		//$("div").fadeOut()
+		/*function diao(){
+			$("#gun").animate({left:-3600},3000,function(){
+				$(this).css("left","0px");
+				diao()
+			})
+		}
+		diao()*/
+		/*$("span").mouseover(function(){
+			
+			$("span").css("background-color","#fff");
+			console.log(Number($(this).css("margin-left").replace("px","")))
+			if(Number($(this).css("margin-left").replace("px",""))>0){
+				$("span").css("margin","0px")
+				$(this).css("margin-right","495px");
+				$(this).css("margin-left","0px");
+				$(this).css("background-color","yellow");
+			}else{
+				$("span").css("margin","0px")
+				$(this).css("margin-left","495px");
+				$(this).css("background-color","yellow");
+			}
+			//$("span").css("margin-left","0px");		
+		})*/
+		/*$("#boxa").mouseout(function(){
+			$(this).css("background-color","#fff");
+			$(this).css("margin-left","0px");
+		})*/
+		function tu1(){
+			$("#tu1").fadeIn(1000)
+			$("#tu1 .text").animate({left:0}, 1000 ,function(){
+				$("#tu1 .con").animate({left:"0",display:"block",height:"300px",width:"760px"}, 1000,function(){
+					$("#tu1").css("display","none");
+					$("#tu1 .con").css("left","-10px");
+					$("#tu1 .text").css("left","-800px");
+					tu2();
+				})
+			});
+
+			
+		}
+		tu1();
+		
+		function tu2(){
+			$("#tu2").fadeIn(1000)
+			$("#tu2 .text").animate({left:0}, 1000 ,function(){
+				$("#tu2 .con").animate({left:"0",display:"block"}, 1000,function(){
+					$("#tu2").css("display","none");
+					$("#tu2 .con").css("left","-10px");
+					$("#tu2 .text").css("left","-800px");
+					tu3();
+				})
+			});
+			
+		}
+		function tu3(){
+			$("#tu3").fadeIn(1000)
+			$("#tu3 .text").animate({left:0}, 1000 ,function(){
+				$("#tu3 .con").animate({left:"0",display:"block"}, 1000,function(){
+					$("#tu3").css("display","none");
+					$("#tu3 .con").css("left","-10px");
+					$("#tu3 .text").css("left","-800px");
+					tu4();
+				})
+			});
+			
+		}
+		function tu4(){
+			$("#tu4").fadeIn(1000)
+			$("#tu4 .text").animate({left:0}, 1000 ,function(){
+				$("#tu4 .con").animate({left:"0",display:"block"}, 1000,function(){
+					$("#tu4").css("display","none");
+					$("#tu4 .con").css("left","-10px");
+					$("#tu4 .text").css("left","-800px");
+					tu5();
+				})
+			});
+			
+		}
+		function tu5(){
+			
+			$("#tu5").fadeIn(1000)
+			$("#tu5 .text").animate({left:0,display:"block"}, 1000 ,function(){
+				$("#tu5 .con").animate({left:"0",display:"block"}, 1000,function(){
+					$("#tu5").css("display","none");
+					$("#tu5 .con").css("left","-10px");
+					$("#tu5 .text").css("left","-800px");
+					tu1();
+				})
+			});	
+
+		}
+		
+	});
+	
+	</script>
+</head>
+<body>
+	<!-- <div id="aa">aaa</div>
+	<div id="bb">bbb</div> -->
+	<!-- <div id="box">
+		<div id="gun">
+			<img src="images/img1.jpg"/>
+			<img src="images/img2.jpg"/>
+			<img src="images/img3.jpg"/>
+			<img src="images/img1.jpg"/>
+		</div>
+	</div> -->
+	<!-- <div id="boxa">
+	<span id="a1">白玫瑰</span>
+	<span id="a2">红玫瑰</span>
+	<span id="a3">绿玫瑰</span>
+	<span id="a4">篮玫瑰</span>
+	<span id="a5">黑玫瑰</span>
+	</div> -->
+	<div id="kuang">
+		<div id="tu1">			
+			<img class="text" src="img/text1.png" />
+			<img class="con" src="img/con1.png" />
+		</div>
+		<div id="tu2">			
+			<img class="text" src="img/text2.png" />
+			<img class="con" src="img/con2.png" />
+		</div>
+		<div id="tu3">			
+			<img class="text" src="img/text3.png" />
+			<img class="con" src="img/con3.png" />
+		</div>
+		<div id="tu4">			
+			<img class="text" src="img/text4.png" />
+			<img class="con" src="img/con4.png" />
+		</div>
+		<div id="tu5">			
+			<img class="text" src="img/text5.png" />
+			<img class="con" src="img/con5.png" />
+		</div>
+	</div>
+</body>
+</html>

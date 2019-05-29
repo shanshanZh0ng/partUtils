@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<head>
+	<meta charset="utf-8">
+	<title>ECharts</title>
+</head>
+
+<body>
+	<!-- 为ECharts准备一个具备大小（宽高）的Dom -->
+	<div id="main" style="height:400px;width: 800px;"></div>
+	<!-- ECharts单文件引入 -->
+	<script type="text/javascript" src="plug/jquery-1.8.0.min.js"></script>
+	<script src="plug/echarts-all.js"></script>
+	<script type="text/javascript" src="plug/ganttOption.js"></script>
+	<script type="text/javascript">
+		 /**加载时脚本*/
+		$(function() {
+			// 基于准备好的dom，初始化echarts图表
+			var myChart = echarts.init(document.getElementById('main'));
+			// 准备数据
+			var dstaObj = getData();
+			// 获取option
+			var ganttOption = getGanttOption(dstaObj);
+			// 为echarts对象加载数据 
+			myChart.setOption(ganttOption);
+		});
+		/**获取数据*/
+		function getData() {
+			//图例数据
+			var legendData = ['查封', '轮候查封'];
+			//y轴数据
+			var yAxisData = ['2015年执监字第50号', '2015年执监字第49号', '2015年执监字第48号'];
+			//辅助留白数据
+			var blankData = [20, 5, 3];
+			//查封数据
+			var chaFengData = [
+				'-',
+				'-', {
+					value: 33,
+					startDate: '2014.09.02',
+					endDate: '2014.10.06',
+					desc: '当前状态：查封（剩XX天）<br/>解封时间：2014.10.6<br/>查封案件：XXX<br/>承办法官：XX（XXX庭）<br/>承办法院：XXXXXX'
+				}
+			];
+			//轮候查封数据
+			var lunHouChaFengData = [{
+					value: 12,
+					startDate: '2014.09.20',
+					endDate: '2014.10.01',
+					desc: '轮候案件：XXX<br/>查封时间 ：- - 至 - -<br/>实际查封：XX天'
+				}, {
+					value: 40,
+					startDate: '2014.09.04',
+					endDate: '2014.10.12',
+					desc: '轮候案件：XXX<br/>查封时间 ：- - 至 - -<br/>实际查封：XX天'
+				},
+				'-'
+			];
+			var obj = new Object();
+			obj.legendData = legendData;
+			obj.yAxisData = yAxisData;
+			obj.blankData = blankData;
+			obj.chaFengData = chaFengData;
+			obj.lunHouChaFengData = lunHouChaFengData;
+			return obj;
+		}
+	</script>
+</body>

@@ -1,0 +1,185 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{margin: 0;padding: 0;}
+
+/* bannerBig css */
+
+.CASICloud_banner{
+	position:relative;
+	width: 100%;
+	min-width: 1200px;
+    _width:expression((document.documentElement.clientWidth||document.body.clientWidth)<1200?"1200px":"");
+	height: 400px;
+	overflow:hidden;
+}
+.CASICloud_banner a{
+    outline: none;
+    _star:expression(this.onFocus=this.blur());
+}
+.CASICloud_banner .frame{
+	position: relative;
+	width:100%;
+	height:100%;
+	overflow:hidden;
+}
+.CASICloud_banner .frame .child{
+	float:left;
+	height:100%;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-color: transparent;
+}
+.CASICloud_banner .frame .child a{
+    display: block;
+    width:100%;
+    height: 100%;
+}
+/* 导航圆点样式 */
+.CASICloud_banner .nav{
+	position:absolute;
+	width: 100%;
+	height:24px;
+	bottom:20px;
+	text-align: center;
+	overflow:hidden;
+	font-size: 0;
+	line-height: 0;
+}
+.CASICloud_banner .nav a{
+    display: inline-block;
+	width:24px;
+	height:24px;
+	margin: 0 6px;
+	background:url('../images/banner_icon.png') 0 -96px no-repeat;
+	vertical-align: top;
+}
+.CASICloud_banner .nav a{
+    /* ie6导航样式 */
+    _width: 18px;
+    _height: 18px;
+    _background: #3d3d3d;
+    _color:#fff;
+    _font-size: 12px;
+    _line-height: 18px;
+    _font-family: 'simsun';
+    _text-align:center;
+    _text-decoration:none;
+}
+.CASICloud_banner .nav a.now,
+.CASICloud_banner .nav a:hover{
+	background-position: -24px -96px;
+    _background: #3077b9; /* ie6 hover背景颜色样式 */
+}
+/* 左右导航样式 */
+.CASICloud_banner .prev,
+.CASICloud_banner .next{
+    position:absolute;
+    top:50%;
+    width:25px;
+    height:40px;
+    margin-top: -20px;
+    background-image: url('../images/banner_icon.png');
+    background-repeat: no-repeat;
+    z-index: 999;
+}
+.CASICloud_banner .prev{
+    left:20px;
+    background-position: 0 -50px;
+}
+.CASICloud_banner .next{
+	right:20px;
+	background-position: -25px -50px;
+}
+.CASICloud_banner .prev:hover{
+    background-position: 0 0;
+}
+.CASICloud_banner .next:hover{
+    background-position: -25px 0;
+}
+/* 图片提示文字 */
+.CASICloud_banner .title{
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+	height:30px;
+	line-height:30px;
+}
+/* 当前序号 */
+.CASICloud_banner .count{
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+	height:30px;
+	line-height:30px;
+}
+.CASICloud_banner .count em{
+    /* 根据情况自定义样式 */
+}
+.CASICloud_banner .count b{
+    /* 根据情况自定义样式 */
+}
+
+/*
+    ======================================================
+*/
+
+/* bannerSmall css */
+
+.CASICloud_bannerSmall{
+    position:relative;
+    width: 1150px;
+    height: 78px;
+    margin: 0 auto;
+    padding: 0 25px;
+    overflow:hidden;
+}
+.CASICloud_bannerSmall a{
+    outline: none;
+    _star:expression(this.onFocus=this.blur());
+}
+.CASICloud_bannerSmall .frame{
+    position: relative;
+    width:100%;
+    height:100%;
+    overflow:hidden;
+}
+.CASICloud_bannerSmall .frame .child{
+    float:left;
+    height:100%;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-color: transparent;
+}
+.CASICloud_bannerSmall .frame .child a{
+    display: block;
+    width:100%;
+    height: 100%;
+}
+/* 左右导航样式 */
+.CASICloud_bannerSmall .prev,
+.CASICloud_bannerSmall .next{
+    position:absolute;
+    top:50%;
+    width:25px;
+    height:40px;
+    margin-top: -20px;
+    background-image: url('../images/banner_icon.png');
+    background-repeat: no-repeat;
+    background-color: #fff;
+    z-index: 999;
+}
+.CASICloud_bannerSmall .prev{
+    left:0;
+    background-position:0 -50px;
+}
+.CASICloud_bannerSmall .next{
+    right:0;
+    background-position: -25px -50px;
+}
+.CASICloud_bannerSmall .prev:hover{
+    background-position: 0 0;
+}
+.CASICloud_bannerSmall .next:hover{
+    background-position: -25px 0;
+}

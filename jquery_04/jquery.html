@@ -1,0 +1,244 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<style type="text/css">
+		/*#view{ width: 200px; height: 200px; overflow: hidden; position: relative; margin-top: 60px;margin-bottom: 50px;}
+		#ifram{ position: absolute; left: 0; width: 800px; height: 200px; overflow: hidden; }
+		#ifram img{ border: none; float: left; height: 200px; width: 200px;} */
+		
+
+		/*图片滑过展示效果
+		#ho{ width: 400px; height: 100px; background-color:gray;  }
+		.thin{padding-top: 30px; width: 16px; height:66px;border:2px solid #000; background-color: red; float: left;}*/
+
+		#bor{ margin-left:200px;width:760px; height:300px; overflow:hidden;}
+		.frame{ width: 760px;height: 300px; overflow: hidden; position: relative;}
+		img{position: absolute;}
+		.pic{position: absolute;}
+		#pic1,#pic3,#pic4,#pic5{top:400px;}
+		#pic2{left:-760px;}
+
+		.text{position: absolute;}
+		#text1,#text3,#text4,#text5{left: -760px;}
+		#text2{top:400px;}
+		
+	</style>
+	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			//$("div").show("slow");
+			//$("div").hide("slow");
+			/*function show(){//循环扩展
+				$("div").show("slow",function(){
+					hide();
+				});				
+			
+			}
+			function hide(){
+				$("div").hide("slow",function(){
+					show();
+				});				
+			}
+			show();*/
+
+
+			//$(".btn2").click(function(){
+  			//	$(".btn2").slideDown("slow");
+			//});
+			/*$("div").slideDown("slow");
+			$("div").slideUp("slow");*/
+
+			/*$("div").slideToggle("slow");
+
+			$("div").slideToggle("slow",function(){
+			   	alert("Animation Done.");
+			});*/
+
+			/*function show(){//循环上下收放
+				$("div").slideToggle("slow",function(){
+			   		hide();
+				});			
+			}
+			function hide(){
+				$("div").slideToggle("slow",function(){
+			   		show();
+				});				
+			}
+			show();*/
+			//$("div").fadeIn("slow");
+			//$("div").fadeOut("slow");
+
+			//$("div").fadeIn("slow",function(){
+  			//	alert("Animation Done.");
+			//});	
+			
+			/*function show(){//循环淡入淡出
+				$("div").fadeIn("slow",function(){
+  					hide();
+				});							
+			}
+			function hide(){
+				$("div").fadeOut("slow",function(){
+					show();
+				});				
+			}
+			show();*/
+
+			//轮播效果
+			/*$("#go").click(function(){
+				(function self(){
+				  	$("#ifram").animate({ 
+					    left:-600+"px"
+				  	}, 1000,function(){
+				  		$(this).css("left","0px");
+				  		self();
+				  	});
+				})()
+			});*/
+
+			/*$("#right").click(function(){
+			  	$(".block").animate({left: '+50px'}, "slow");
+			});
+			$("#left").click(function(){
+			 	$(".block").animate({left: '-50px'}, "slow");
+			});*/
+
+			//$("#img").animate(left:-10px;);
+
+			/*//图片滑过展示效果
+			$("span").mouseover(function(){
+				$("span").not("this").css("width","16px");
+				$(this).css("width","316px");
+				$("span").not("this").css("backgroundColor","red");
+				$(this).css("backgroundColor","blue");				
+			});*/
+			
+
+			
+				/*function show1(){
+					$("#frame1").fadeIn("slow",function(){
+	  					$("#pic1").animate({top: '0px'}, 1000);
+	  					$("#text1").animate({left: '0px'}, 1000);	  	
+					});
+					
+					$("#frame1").fadeOut(2000,function(){
+						$("#text1").css("left","-760px");
+						$("#pic1").css("top","400px");
+						show2();
+					});						
+				}
+				show1();
+				function show2(){
+					$("#frame2").fadeIn("slow",function(){
+	  					
+	  					$("#pic2").animate({left: '0px'}, 1000,function(){
+	  						$("#text2").animate({top: '0px'}, 1000);
+	  					});	  	
+					});
+					
+					$("#frame2").fadeOut(2000,function(){
+						$("#pic2").css("left","-760px");
+						$("#text2").css("top","400px");
+						show3();
+					});						
+				}
+									
+				function show3(){
+					$("#frame3").fadeIn("slow",function(){
+	  					$("#pic3").animate({top: '0px'}, 1000);
+	  					$("#text3").animate({left: '0px'}, 1000);	  	
+					});
+					
+					$("#frame3").fadeOut(2000,function(){
+						$("#pic3").css("top","400px");
+						$("#text3").css("left","-760px");
+						show4();
+					});						
+				}
+				function show4(){
+					$("#frame4").fadeIn("slow",function(){
+	  					$("#pic4").animate({top: '0px'}, 1000);
+	  					$("#text4").animate({left: '0px'}, 1000);	  	
+					});
+					
+					$("#frame4").fadeOut(2000,function(){
+						$("#pic4").css("top","400px");
+						$("#text4").css("left","-760px");
+						show5();
+					});						
+				}
+				function show5(){
+					$("#frame5").fadeIn("slow",function(){
+	  					$("#pic5").animate({top: '0px'}, 1000);
+	  					$("#text5").animate({left: '0px'}, 1000);	  	
+					});
+					
+					$("#frame5").fadeOut(2000,function(){
+						$("#pic5").css("top","400px");
+						$("#text5").css("left","-760px");
+						show1();
+					});						
+				}*/
+			
+
+		});
+	</script>
+</head>
+<body>
+
+	<!--<div style="display:none; width:300px; height:300px; background-color:red;">12345</div>
+	<div class="btn2" style="display:none; width:300px; height:300px; background-color:blue;"></div>
+
+	<button id="left">«</button> <button id="right">»</button>
+	<div class="block" style="background-color:green;"></div>-->
+	
+	<!--<button id="go">go</button>
+	<div id="view">
+		<div id="ifram">
+			<img alt="" src="n01.jpg" />
+			<img alt="" src="n02.jpg" />
+			<img alt="" src="n03.jpg" />
+			<img alt="" src="n01.jpg" />
+		</div>
+	</div>-->
+
+	<!--//图片滑过展示效果
+	<div id="ho">
+		<span class="thin">玫瑰</span>
+		<span class="thin">玫瑰</span>
+		<span class="thin">玫瑰</span>
+		<span class="thin">玫瑰</span>
+		<span class="thin">玫瑰</span>
+	</div>-->
+	
+	
+	<div id="bor">
+		<div class="frame" id="frame1">
+			<img alt="" src="img/bg1.jpg">	
+			<span id="pic1" class="pic"><img alt="" src="img/con1.png"></span>
+			<span id="text1" class="text"><img alt="" src="img/text1.png"></span>
+		</div>
+		<div class="frame" id="frame2">
+			<img alt="" src="img/bg2.jpg">	
+			<span id="pic2" class="pic"><img alt="" src="img/con2.png"></span>
+			<span id="text2" class="text"><img alt="" src="img/text2.png"></span>
+		</div>
+		<div class="frame" id="frame3">
+			<img alt="" src="img/bg3.jpg">	
+			<span id="pic3" class="pic"><img alt="" src="img/con3.png"></span>
+			<span id="text3" class="text"><img alt="" src="img/text3.png"></span>
+		</div>
+		<div class="frame" id="frame4">
+			<img alt="" src="img/bg3.jpg">	
+			<span id="pic4" class="pic"><img alt="" src="img/con4.png"></span>
+			<span id="text4" class="text"><img alt="" src="img/text4.png"></span>
+		</div>
+		<div class="frame" id="frame5">
+			<img alt="" src="img/bg3.jpg">	
+			<span id="pic5" class="pic"><img alt="" src="img/con5.png"></span>
+			<span id="text5" class="text"><img alt="" src="img/text5.png"></span>
+		</div>
+	</div>
+
+</body>
+</html>

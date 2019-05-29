@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>banner1-ie6+</title>
+    <link  type="text/css" rel="stylesheet" href="css/CASICloud_banner.css">
+    <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="js/CASICloud_banner.js"></script>
+
+    <!-- ie6兼容png24 Begin -->
+    <!--[if IE 6]>
+        <script type="text/javascript" language="javascript" src="js/DD_belatedPNG_0.0.8a.js"></script>
+        <script>
+            DD_belatedPNG.fix(".CASICloud_banner .prev,.CASICloud_banner .next");
+        </script>
+    <![endif]-->
+    <!-- ie6兼容png24 -->
+
+    <!-- banner js调用 Begin -->
+    <script>
+    $(function(){
+        $('.CASICloud_banner .frame').mScroll({
+                  nav : ".CASICloud_banner .nav a",     //导航按钮
+                 prev : ".CASICloud_banner .prev",      //前一个
+                 next : ".CASICloud_banner .next",      //后一个
+                title : ".CASICloud_banner .title",     //标题（.child的title属性值）
+                index : ".CASICloud_banner .count b",   //当前序号
+                count : ".CASICloud_banner .count em"   //总数
+				
+            });
+        });
+    </script>
+    <!-- banner js调用 End -->
+
+    <!-- 参数设置（默认） Begin -->
+        <!--
+            {
+                     auto : 1,                    //自动开始
+                direction : "h",                  //滚动方向,h横向,v纵向
+                    dtype : "left",               //正反方向
+                  isfocus : 0,                    //是否作为焦点图
+                  minsize : 1,                    //最小数量
+                    speed : 500,                  //滚动速度
+                   easing : "",                   //缓冲类型
+                    delay : 5000,                 //自动滚动间隔
+                      nav : null,                 //导航按钮
+                scrollnav : 0,                    //导航滚动
+            nav_direction : "h",                  //导航方向,h横向,v纵向
+                     prev : null,                 //前一个
+                     next : null,                 //后一个
+                    index : null,                 //当前序号
+                    count : null,                 //总数
+                    title : null,                 //标题
+                    arrow : 1,                    //是否反转
+                    cycle : 1,                    //是否循环
+                mousestop : 1,                    //鼠标划入停止
+               mousewheel : 0                     //开启滚轮事件
+            }
+        -->
+    <!-- 参数设置 End -->
+
+</head>
+<body>
+
+<!-- banner内容 Begin -->
+<div class="CASICloud_banner">
+    <a href="javascript:;" class="prev"></a>
+    <div class="frame">
+        <div class="child" style="background-image: url('images/banner1.jpg');" title="第一张图片">
+            <a href="javascript:void(0);"></a>
+        </div>
+        <div class="child" style="background-image: url('images/banner2.jpg');" title="第二张图片">
+            <a href="javascript:void(0);"></a>
+        </div>
+        <div class="child" style="background-image: url('images/banner3.jpg');" title="第三张图片">
+            <a href="javascript:void(0);"></a>
+        </div>
+        <div class="child" style="background-image: url('images/banner4.jpg');" title="第四张图片">
+            <a href="javascript:void(0);"></a>
+        </div>
+        <div class="child" style="background-image: url('images/banner5.jpg');" title="第五张图片">
+            <a href="javascript:void(0);"></a>
+        </div>
+    </div>
+    <a href="javascript:;" class="next"></a>
+    <div class="nav">
+        <a href="javascript:;">1</a>
+        <a href="javascript:;">2</a>
+        <a href="javascript:;">3</a>
+        <a href="javascript:;">4</a>
+        <a href="javascript:;">5</a>
+    </div>
+    <div class="title"></div>
+    <div class="count"><b></b>/<em></em></div>
+</div>
+<!-- banner内容 End -->
+
+</body>
+</html>

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="css/demo.css"/>
+		<script src="js/jquery-1.8.3.min.js" type="text/javascript" charset="utf-8"></script>
+		<title>demo</title>
+	</head>
+	<body>
+		<!-- 左侧菜单栏 begin -->
+			<div class="detail_nav">
+                <div class="detail_navTop">
+                    <div class="detail_navTop_tit">
+                      	API 	
+                    </div>
+                    <div class="detail_navCon">
+                        <div class="detail_navList">
+                            <div class="detail_navList_tit">
+                    			1111
+                            </div>
+                            <ul class="detail_ul" style="display:block;">
+                                <li class="active2">
+                                    <a href="javascript:void(0);">1-1</a>
+                                </li>
+                                <li class="">
+                                    <a href="javascript:void(0);">1-2</a>
+                                </li>
+                                
+                            </ul>
+                        </div>
+                        <div class="detail_navList">
+                            <div class="detail_navList_tit">
+                                	2222
+                            </div>
+                            <ul class="detail_ul">
+                                <li class="">
+                                    <a href="javascript:void(0);">2-1</a>
+                                </li>
+                                <li class="">
+                                    <a href="javascript:void(0);">2-2</a>
+                                </li>
+                                <li class="">
+                                    <a href="javascript:void(0);">2-3</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="detail_navList">
+                            <div class="detail_navList_tit">
+                            33333
+                            </div>
+                            <ul class="detail_ul">
+                                <li class="">
+                                    <a href="javascript:void(0);">3-1</a>
+                                </li>
+                                <li class="">
+                                    <a href="javascript:void(0);">3-2</a>
+                                </li>
+                                <li class="">
+                                    <a href="javascript:void(0);">3-3</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="detail_navList">
+                            <div class="detail_navList_tit active">
+                         4444444
+                            </div>
+                            <ul class="detail_ul">
+                                <li class="">
+                                    <a href="javascript:void(0);">4-1</a>
+                                </li>
+                                <li class="">
+                                    <a href="javascript:void(0);">4-2</a>
+                                </li>
+                                <li class="">
+                                    <a href="javascript:void(0);">4-3</a>
+                                </li>
+                                <li class="">
+                                    <a href="javascript:void(0);">4-4</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="detail_navList">
+                            <div class="detail_navList_tit">
+                            555555
+                            </div>
+                            <ul class="detail_ul">
+                                <li class="">
+                                    <a href="javascript:void(0);">5-1</a>
+                                </li>
+                                <li class="">
+                                    <a href="javascript:void(0);">5-2</a>
+                                </li>
+                                <li class="">
+                                    <a href="javascript:void(0);">5-3</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="detail_navList">
+                            <div class="detail_navList_tit">
+                         666666
+                            </div>
+                            <ul class="detail_ul">
+                                <li class="">
+                                    <a href="javascript:void(0);">6-1</a>
+                                </li>
+                                
+                            </ul>
+                        </div>
+                        
+                    </div>
+                </div>
+                
+            </div>
+	<!-- 左侧菜单栏 end -->
+	</body>
+	<script type="text/javascript">
+		$(function(){
+	
+		    //菜单栏
+		    $(".detail_navList_tit").each(function(index){
+	            $(this).click(function(){
+	                if($(this).hasClass('active')){
+	                    $(".detail_ul").hide();
+	                    $(this).removeClass('active');
+	                }else{
+	                    $(".detail_navList_tit").removeClass('active')
+	                    $(this).addClass('active');
+	                    $(".detail_ul").hide();
+	                    $(".detail_ul").eq(index).show();
+	                    $(".detail_ul li").removeClass('active2');
+	                    $(".detail_ul").eq(index).children().first().addClass('active2');
+	
+	                }
+	                
+	            });
+		         
+		    });
+	        $(".detail_ul li").click(function(){
+	            $(".detail_ul li").removeClass('active2');
+	            $(this).addClass('active2');
+	        })
+			   
+		});
+	</script>
+</html>
